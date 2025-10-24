@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS casos (
+  id SERIAL PRIMARY KEY,
+  titulo TEXT NOT NULL,
+  descricao TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS alunos (
+  id SERIAL PRIMARY KEY,
+  nome TEXT NOT NULL,
+  idade INTEGER NOT NULL,
+  frequencia TEXT DEFAULT 'N/A',
+  status TEXT DEFAULT 'Ativo'
+);
